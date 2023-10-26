@@ -74,6 +74,9 @@ button {
   outline: none;
   cursor: pointer;
   margin: 10px 0;
+  &:hover {
+    background-color: hsl(217, 12%, 63%);
+  }
 }
 .submitted {
   display: none;
