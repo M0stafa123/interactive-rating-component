@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 100vh;
+}
+body > div {
+  max-width: 400px;
+  margin: auto;
+  color: white;
+  /* background-color: #212832; */
+  padding: 20px;
+  border-radius: 20px;
+  background: radial-gradient(at top, #2b3441, #2b3441 5%, #212832 60%);
+}
+.active {
+  background-color: hsl(25, 97%, 53%) !important;
+}
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #263344;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.before h3 {
+  font-size: 22px;
+}
+.before p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.8;
+  margin-top: -10px;
+  font-size: 15px;
+  min-width: 250px;
+}
+.nums {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  & span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: hsl(216, 15%, 80%);
+    font-size: 13px;
+    background-color: hsl(213, 19%, 18%);
+    &:hover {
+      background-color: hsl(216, 12%, 54%);
+    }
+  }
+}
+button {
+  margin: auto;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.submitted {
+  display: none;
+  & img {
+    margin: 15px auto;
+    max-width: 100%;
+    display: block;
+  }
+  & h3 {
+    width: fit-content;
+    margin: auto;
+    font-size: 23px;
+  }
+}
+.rating-result {
+  background-color: hsl(209, 22%, 19%);
+  padding: 8px 30px;
+  color: hsl(25, 97%, 53%);
+  width: fit-content;
+  margin: 20px auto;
+  border-radius: 100px;
+  font-size: 15px;
+}
+.thank-you {
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.8;
+}
